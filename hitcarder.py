@@ -95,6 +95,7 @@ class HitCarder(object):
         # with open("form.txt", "w", encoding="utf-8") as f:
         #    f.write(new_form)
         print(new_form)
+        print("**********************************************************")
         print(lines)
         return False
 
