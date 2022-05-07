@@ -144,7 +144,7 @@ class HitCarder(object):
         new_info['sfqrxxss'] = 1 # 属实
         
         captcha_url = 'https://healthreport.zju.edu.cn/ncov/wap/default/code'
-        ocr = ddddocr.DdddOcr()
+        ocr = ddddocr.DdddOcr(show_ad=False,old=True)
         resp = self.sess.get(captcha_url)
         captcha = ocr.classification(resp.content)
         new_info['verifyCode'] = captcha
