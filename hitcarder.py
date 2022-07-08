@@ -142,7 +142,7 @@ class HitCarder(object):
         new_info['sfzx'] = old_info['sfzx'] # 在校
         new_info['sfymqjczrj'] = old_info['sfymqjczrj'] # 入境
         new_info['sfqrxxss'] = 1 # 属实
-        new_info['internship'] = old_info['internship'] # 实习
+        new_info['internship'] = 1 # 实习
         
         captcha_url = 'https://healthreport.zju.edu.cn/ncov/wap/default/code'
         ocr = ddddocr.DdddOcr(show_ad=False,old=True)
